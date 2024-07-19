@@ -2,8 +2,11 @@
 <html lang="en-US">
 
 <head>
-<title>Biography - Oliver Zhang</title>
+<title>Media - Oliver Zhang</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
     img {
       display: block;
@@ -31,12 +34,12 @@
       text-decoration: none;
     }
     a:hover {
-      color:rgb(178, 34, 32);
+      color:#b60500;
       background-color: transparent;
       text-decoration: none;
     }
     a:active {
-      color:rgb(178, 34, 32);
+      color:#b60500;
       background-color: transparent;
       text-decoration: none;
     }
@@ -66,12 +69,124 @@
       letter-spacing: 0px;
       font-size: 12px;
       text-align: left;
-      text-indent: 280px;
+      text-indent: 17.7rem;
       color: rgb(120, 120, 120)
+    }
+
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 80px;
+        margin-left: 432px;
+        margin-right: 432px;
+
+        flex-wrap: nowrap;
+        padding-top: 1rem;
+    }
+    .image-container img{
+        overflow:auto;
+        height: 80px;
+        align-items: center;
+        object-fit: cover;
+        transition: 0.2s ease;
+        opacity: 0.65;
+    }
+    .image-container img:hover{
+        opacity: 1;
+    }
+
+    .image-viewer {
+        padding-top: 1rem;
+        display: none;
+    }
+
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        overflow: auto;
+        margin-left: 432px;
+        margin-right: 432px;
+    }
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position:absolute;
+        top: 45%;
+        width: 0.7rem;
+        padding: 16px;
+        color: white;
+        background-color: #00000019;
+        font-weight: bold;
+        font-size: 20px;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.208);
+        color: white;
+        transition: 0.2s ease;
+    }
+    /* Six columns side by side */
+    .column {
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+        width: 8.33%;
+    }
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+    }
+    .active, .demo:hover {
+        opacity: 1;
+    }
+
+
+
+    .bottomleft {
+        position: absolute;
+        bottom: 1.2rem;
+        left: 1.2rem;
+        font-size: 16px;
+        font-family: verdana;
+        color: white;
+        letter-spacing: 0.06rem;
+    }
+
+    .videos {
+        margin-left: 432px;
+        width: 800px;
+    }
+    .video-item {
+        width: 800px;
+        align-items: left;
+        margin-bottom: 32px;
+        display: flex;
+    }
+    .video-text {
+        font-family: verdana;
+        font-size: 17px;
+        margin: 20px;
     }
 </style>
 </head>
-
 
 
 <body>						
@@ -79,7 +194,7 @@
 <br>
 
 <h1>
-  <a style = "color:rgb(178, 34, 32);" href="index.html">OLIVER ZHANG</a>
+  <a style = "color:#b60500;" href="index.html">OLIVER ZHANG</a>
 </h1>
 
 <p>NEUROSCIENCE & TRUMPET PERFORMANCE, NORTHWESTERN UNIVERSITY</p>
@@ -93,7 +208,7 @@
     </div>
 
     <div>
-        <p class="menu"><a href="media.html">MEDIA</a></p>
+        <p class="menu"><a href="media.html" style="color:#b60500;">MEDIA</a></p>
     </div>
 
     <div>
@@ -105,11 +220,172 @@
     </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
+<div style="font-family: verdana; width: 800px; text-align: left; margin: auto;">
+    <h2>Photos</h2>
+</div>
+
+<div class="container">
+    <div class="image-viewer">
+        <img src="images/296A9546.jpg" alt="Headshot" style = "width: 800px; height: 534px; object-fit: cover; object-position:top;">
+        <div class="bottomleft">Headshot</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/296A9561.jpg" alt="Headshot" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -170px;">
+        <div class="bottomleft">Headshot</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/chosen vale.jpg" alt="Chosen Vale with Giuliano Sommerhalder" style = "width: 800px; height: 534px; object-fit: cover; object-position:top;">
+        <div class="bottomleft">Chosen Vale with Giuliano Sommerhalder</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/doctor.jpg" alt="Hospital Shadowing" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -250px;">
+        <div class="bottomleft">Hospital Shadowing</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/graduation.jpg" alt="Performing at HS Graduation" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -80px;">
+        <div class="bottomleft">Performing at HS Graduation</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/kc science.jpg" alt="Presenting at Kansas City Science Fair" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -15px;">
+        <div class="bottomleft">Presenting at Kansas City Science Fair</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/ku lab.jpg" alt="Doing Experiments at Zhu Lab (KU)" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -150px;">
+        <div class="bottomleft">Doing Experiments at Zhu Lab (KU)</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/nafme.jpg" alt="All National Concert Band" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -80px;">
+        <div class="bottomleft">All National Concert Band</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/nu lab.jpg" alt="Northwestern Lab Research" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -230px;">
+        <div class="bottomleft">Northwestern Lab Research</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/swim.jpg" alt="HS Swim Team" style = "width: 800px; height: 534px; object-fit: cover; object-position:top;">
+        <div class="bottomleft">HS Swim Team</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/sym band.jpg" alt="First Symphonic Band Concert" style = "width: 800px; height: 534px; object-fit: cover; object-position:0px -240px;">
+        <div class="bottomleft">First Symphonic Band Concert</div>
+    </div>
+    <div class="image-viewer">
+        <img src="images/fountain city.jpeg" alt="Photo credit: Andy Schwartz" style = "width: 800px; height: 534px; object-fit: cover; object-position:top;">
+        <div class="bottomleft">Photo credit: Andy Schwartz</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
+</div>
+
+
+
+<div class="image-container">
+    <img class="demo cursor" src="images/296A9546.jpg" alt="Headshot" onclick="currentSlide(1)">
+    <img class="demo cursor" src="images/296A9561.jpg" alt="Headshot" onclick="currentSlide(2)">
+    <img class="demo cursor" src="images/chosen vale.jpg" alt="Chosen Vale with Giuliano Sommerhalder" onclick="currentSlide(3)">
+    <img class="demo cursor" src="images/doctor.jpg" alt="Hospital Shadowing" onclick="currentSlide(4)">
+    <img class="demo cursor" src="images/graduation.jpg" alt="Performing at HS Graduation" onclick="currentSlide(5)">
+    <img class="demo cursor" src="images/kc science.jpg" alt="Presenting at Kansas City Science Fair" onclick="currentSlide(6)">
+    <img class="demo cursor" src="images/ku lab.jpg" alt="Doing Experiments at Zhu Lab (KU)" onclick="currentSlide(7)">
+    <img class="demo cursor" src="images/nafme.jpg" alt="All National Concert Band" onclick="currentSlide(8)">
+    <img class="demo cursor" src="images/nu lab.jpg" alt="Northwestern Lab Research" onclick="currentSlide(9)">
+    <img class="demo cursor" src="images/swim.jpg" alt="HS Swim Team" onclick="currentSlide(10)"> 
+    <img class="demo cursor" src="images/sym band.jpg" alt="First Symphonic Band Concert" onclick="currentSlide(11)">
+    <img class="demo cursor" src="images/fountain city.jpeg" alt="Photo credit: Andy Schwartz" onclick="currentSlide(12)">
+</div>
+
+<br>
+<br>
+<hr style="border-top:rgb(106, 105, 105); border-color: rgb(105, 105, 105); width:800px; text-align:center; margin-left:auto; margin-right:auto">
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("image-viewer");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<br>
+
+<div style="font-family: verdana; width: 800px; text-align: left; margin: auto;">
+    <h2>Videos</h2>
+</div>
+
+<br>
+
+<div class="videos">
+    <div class="video-item">
+        <iframe width="244" height="162"
+        src="https://www.youtube.com/embed/dTLkuBZdyYY">
+        </iframe>
+        <h3 class="video-text">National Trumpet Competition (2022): Peskin Concerto No.1 - Oliver Zhang</h3>
+    </div>
+    <div class="video-item">
+        <iframe width="244" height="162"
+        src="https://www.youtube.com/embed/9OGx1X67I7k">
+        </iframe>
+        <h3 class="video-text">National Trumpet Competition (2023): Tomasi Trumpet Concerto - Oliver Zhang</h3>
+    </div>
+    <div class="video-item">
+        <iframe width="244" height="162"
+        src="https://www.youtube.com/embed/tb3EvRoOMnU">
+        </iframe>
+        <h3 class="video-text">Tomasi Trumpet Concerto - Oliver Zhang</h3>
+    </div>
+    <div class="video-item">
+        <iframe width="244" height="162"
+        src="https://www.youtube.com/embed/eo7w5OUJxDA">
+        </iframe>
+        <h3 class="video-text">Peskin Trumpet Concerto No.1 - Oliver Zhang</h3>
+    </div>
+    <div class="video-item">
+        <iframe width="244" height="162"
+        src="https://www.youtube.com/embed/z0QVmCnSxls">
+        </iframe>
+        <h3 class="video-text">Adventures on Earth "ET" - Northwestern Symphonic Band (2024)</h3>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <p class="watermark">Copyright 2024</p>
 <br>
 <p class="watermark">Website design by 
-  <a style = "color:rgb(50, 50, 50); font-family: helvetica; letter-spacing: 0px;" href="index.html">Oliver Zhang</a>
+  <a style = "color:rgb(50, 50, 50); font-family: helvetica; letter-spacing: 0px;" href="index.html" target="_blank">Oliver Zhang</a>
 </p>
 
 <br>
@@ -118,6 +394,7 @@
 
 
 </body>
+
 
 
 </html>
