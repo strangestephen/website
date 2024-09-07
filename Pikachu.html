@@ -15,9 +15,10 @@
         overflow:auto;
         margin-left: auto;
         margin-right: auto;
+        height:6.7rem;
     }
     div.menu div {
-        width:20%;  
+        width:25%;  
         float:left;
     }
     a:link {
@@ -108,6 +109,47 @@
     color: rgb(120, 120, 120)
 }
 
+    .dropbtn {
+      font-family: verdana;
+      font-size: 11px;
+      text-align: center;
+      letter-spacing: 3px;
+      overflow: hidden;
+      color: #646464;
+      position: relative;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 32.2%;
+      right: auto;
+    }
+
+    .dropdown-content a {
+      font-family: verdana;
+      font-size: 11px;
+      position: relative;
+      letter-spacing: 3px;
+      display:block;
+      line-height: 1.4rem;
+    }
+
+    .dropdown-content a:hover {
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      background-color: white;
+      text-decoration: none;
+      display:block;
+    }
 </style>
 </head>
 
@@ -138,21 +180,19 @@
     </div>
 
     <div>
-        <p class="menu"><a href="blog.html">BLOG</a></p>
-    </div>
-
-    <div>
         <p class="menu"><a href="contact.html">CONTACT</a></p>
     </div>
 
-    <div>
-        <p class="menu"><a href="Pikachu.html" style="color:#b60500;">PIKACHU</a></p>
-    </div>
+    <div class="dropdown">
+      <p style="letter-spacing:3px; overflow:hidden;"><a href="#" onclick="return false">GALLERY</a></p>
+        <div class="dropdown-content">
+          <a href="Pikachu.html" style="color:#b60500;">PIKACHU</a>
+          <a href="Gundam.html">GUNDAM</a>
+          <a href="#">FOOD</a>
+        </div>
+  </div>
 </div>
 
-<br>
-<br>
-<br>
 
 
 <div class="row">
@@ -214,7 +254,7 @@
         <img src="images/pikachu/pikachu 44.jpeg" style="width:100%;" class="zoom">
         <img src="images/pikachu/pikachu 45.jpeg" style="width:100%;" class="zoom">
     </div>
-  </div>
+</div>
 
 
 <br>
